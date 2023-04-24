@@ -44,18 +44,18 @@ function HomePage() {
       <h1>The Home Page</h1>
       <form onSubmit={submitFormHandler}>
         <div>
-          <label htmlFor="email">Your Email: </label>
-          <input type="email" id="email" ref={emailInputRef} />
+          <label htmlFor='email'>Your Email: </label>
+          <input type='email' id='email' ref={emailInputRef} />
         </div>
         <div>
-          <label htmlFor="feedback">Your feedback: </label>
-          <textarea id="feedback" rows="5" ref={feedbackInputRef}></textarea>
+          <label htmlFor='feedback'>Your feedback: </label>
+          <textarea id='feedback' rows='5' ref={feedbackInputRef}></textarea>
         </div>
         <button>Send Feedback</button>
       </form>
       <hr />
       <button>
-        <Link href="/feedback">All Feedbacks</Link>
+        <Link href='/feedback'>All Feedbacks</Link>
       </button>
       <button onClick={loadFeedbackHandler}>Load Feedback</button>
       <ul>{renderFeedbackItems}</ul>

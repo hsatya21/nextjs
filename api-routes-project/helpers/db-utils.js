@@ -1,8 +1,7 @@
 import { MongoClient } from 'mongodb';
 
 export async function connectDatabase() {
-  const url =
-    'mongodb+srv://hsatya:oLZMwWC7YzDjeQhk@cluster0.fjfu2zg.mongodb.net/events?retryWrites=true&w=majority';
+  const url = process.env.MONGO_URL;
   const client = await MongoClient.connect(url);
   return client;
 }
